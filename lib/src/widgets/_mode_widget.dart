@@ -40,21 +40,17 @@ class SelectionItems extends StatelessWidget {
 
 List<ModeData> paintModes(TextDelegate textDelegate) => [
       ModeData(
-          icon: Icons.zoom_out_map,
-          mode: PaintMode.none,
-          label: textDelegate.noneZoom),
+          icon: Icons.edit,
+          mode: PaintMode.freeStyle,
+          label: textDelegate.drawing),
       ModeData(
           icon: Icons.horizontal_rule,
           mode: PaintMode.line,
           label: textDelegate.line),
       ModeData(
-          icon: Icons.crop_free,
+          icon: Icons.square_outlined,
           mode: PaintMode.rect,
           label: textDelegate.rectangle),
-      ModeData(
-          icon: Icons.edit,
-          mode: PaintMode.freeStyle,
-          label: textDelegate.drawing),
       ModeData(
           icon: Icons.lens_outlined,
           mode: PaintMode.circle,
@@ -63,14 +59,6 @@ List<ModeData> paintModes(TextDelegate textDelegate) => [
           icon: Icons.arrow_right_alt_outlined,
           mode: PaintMode.arrow,
           label: textDelegate.arrow),
-      ModeData(
-          icon: Icons.power_input,
-          mode: PaintMode.dashLine,
-          label: textDelegate.dashLine),
-      ModeData(
-          icon: Icons.text_format,
-          mode: PaintMode.text,
-          label: textDelegate.text),
     ];
 
 @immutable
